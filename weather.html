@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+		<title>Weather App</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div class='text' id='message'>Click the Button to get the Weather !</div>
+<div class = button id='clickButton'>
+  <div id='pointer'></div>
+</div>
+<div class = 'main'>
+<div class = 'wrapper'>
+<div id="weatherBox">
+  <div class = 'background'></div>
+  <div id='locationbox'>
+    <span id='city'></span>
+    <img id = "countryimg" src="">
+  </div>
+  
+  <div class= 'container' id="weather">
+    <div class = 'background'></div>
+        <ul>
+          <li>Weather :<span id='meteo'></span></li>
+          <li>Wind : <span id='wind'></span>MpH</li>
+          <li>Temperature : <span id='temperature'></span></li>
+          <li>Pressure : <span id='pressure'></span>P</li>
+          <li>Humidity : <span id='humidity'></span></li>
+        </ul>
+    </div>
+  </div>  
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>  
+<script src = 'JS/Weatherfunction.js'></script>  
+
+</body>
+</html>

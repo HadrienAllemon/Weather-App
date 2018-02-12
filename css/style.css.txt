@@ -1,0 +1,134 @@
+html,body{
+  background: radial-gradient(#153F4B, #0F1540);
+  margin : 0;
+  height : 100%;
+  
+}
+
+.text{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  position : absolute;
+  left : 50%;
+  top : 22%;
+  transform : translateX(-50%);
+  -moz-transform : translateX(-50%);
+  -webkit-transform : translateX(-50%);
+  -o-transform : translateX(-50%);
+  font: 40px "Atomic Age", Helvetica, sans-serif ;
+  color: rgb(64, 126, 196);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 1px 1px 0 rgb(77,162,252) , -1px -1px 0 rgb(77,162,252) , 1px -1px 0 rgb(77,162,252) , -1px 1px 0 rgb(77,162,252) ;
+}
+
+.button{
+  background-color : rgba(77,162,252,0.2);
+  position : absolute;
+  top : 50%;
+  margin-top : -75px;
+  left : 50%;
+  margin-left : -75px;
+  width : 120px;
+  height : 120px;
+  border : 5px solid white;
+  border-radius : 50%;
+  transition : background-color 250ms ease-in-out,
+               transform 250ms ease-in-out;
+  
+}
+.button:hover{
+  background-color: rgba(255,255,255,0.8);
+  transform : scale(1.1);
+}
+
+/*.button:hover{
+  animation : bigger 600ms ease-in-out 0s forwards
+} */
+
+#pointer {
+  height : 100%;
+  width : 100%;
+  background : url('https://image.flaticon.com/icons/svg/69/69434.svg') no-repeat;
+  background-size : 80%;
+  background-position : center;
+}
+/*@keyframes bigger {
+  100%{
+    transform : scale(1.07);
+    background-color : rgba(240,240,240,.75);
+   
+  }
+} */
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#weatherBox{
+  border: 8px solid white;
+  border-radius : 25%;
+  margin : 0 auto;
+  width : 750px;
+  height : 500px;
+ /* position: absolute;
+  margin: auto;
+  left : 0;
+  right : 0;
+  top : 0;
+  bottom : 0; */
+}
+
+#city{
+  display:block;
+}
+.background {
+  background-color: rgba(255, 255, 255, 0.5);
+  filter : blur(5px);
+  border-radius : 40px;
+  
+}
+#weatherBox > .background {
+  width : 70%;
+  height : 27%;
+  margin : 0 auto;
+} 
+.container > .background {
+  height : 100%;
+  width : 50%;
+  margin-top : 20px;
+  margin-left : 25px;
+  margin-bottom : -340px;
+}
+#locationbox{
+  margin-top : -130px;
+  min-width: 30%;
+  text-align : center;
+  position: relative;
+  z-index : 1;
+}
+.container {
+  height : 60%;
+  width : 100%;
+}
+ul,span {
+  list-style : none;
+  font-size : 35px;
+  position : relative;
+  z-index : 1;
+
+
+}
+li {
+  padding : 10px;
+  }
