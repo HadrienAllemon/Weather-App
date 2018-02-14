@@ -74,7 +74,7 @@ $.ajax({
         }
 })
   .done(function(quote){
- temperature = quote.main.temp;
+ temperature = Math.round(2*parseFloat(quote.main.temp))/2;
  wind = quote.wind.speed;
  pressure = quote.main.pressure;
  humidity = quote.main.humidity;
